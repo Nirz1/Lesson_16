@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/null.css">
+	<title>Урок №16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="visit">
+				<div class="visit__container">
+					<h2 class="visit__title">Make an appointment</h2>
+					<form class="visit__form" action="#">
+						<div class="visit__items">
+							<div class="visit__item">
+								<input class="visit__item-form" placeholder="Name" name="name" type="text">
+							</div>
+							<div class="visit__item">
+								<input class="visit__item-form" placeholder="Email" name="email" type="email">
+							</div>
+							<div class="visit__item">
+								<input class="visit__item-form" placeholder="Phone Number" name="phon" type="tel">
+							</div>
+							<div class="visit__item">
+								<select class="visit__item-form" name="select">
+									<option value="1">Item №1</option>
+									<option value="2">Item №2</option>
+									<option value="3">Item №3</option>
+								</select>
+							</div>
+							<textarea placeholder="Tell us about your puppers include his/her name"
+								class="visit__textarea" name="textarea"></textarea>
+						</div>
+						<div class="visit__button">
+							<button class="visit__sub-button" type="submit">Make an Appointment</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="summary">
+				<div class="summary__container">
+					<div class="summary__block-title">
+						<div class="summery__title">Summary</div>
+						<div class="summery__sub-title">Estimate Shipping and Tax</div>
+						<div class="summery__text-title">Enter your destination to get a shipping estimate.</div>
+					</div>
+					<form action="#">
+						<div class="summary__form">
+							<label class="summary__label" for="summary-select">Country</label>
+							<select id="summary-select" class="summary__select" name="select">
+								<option value="1">Australia</option>
+								<option value="2">Poland</option>
+								<option value="3">Ukraine</option>
+							</select>
+							<label class="summary__label" for="state">State/Province</label>
+							<input class="summary__input" id="state" required type="text" name="state">
+							<label class="summary__label" for="code">Zip/Postal Code</label>
+							<input class="summary__input" id="code" required type="text" name="code">
+						</div>
+						<div class="summary__radio-container">
+							<label class="summary__label">Standard Rate</label>
+							<div class="summary__radio-block">
+								<input class="summary__radio" type="radio" name="radio" id="standart">
+								<label class="summary__label-focus" for="standart">Price may vary depending on the
+									item/destination. Shop Staff will contact you. $21.00</label>
+							</div>
+							<label class="summary__label">Pickup from store</label>
+							<div class="summary__radio-block">
+								<input class="summary__radio" type="radio" name="radio" id="pickup">
+								<label class="summary__label-focus" for="pickup">1234 Street Adress City Address, 1234
+									$0.00</label>
+							</div>
+						</div>
+						<div class="summary__discount">
+							<div class="summary__sub-title summary__sub-title_margin">Apply Discount Code</div>
+							<label class="summary__label" for="discount">Enter discount code</label>
+							<input class="summary__input" placeholder="Enter Discount code" type="text" name="discount"
+								id="discount">
+						</div>
+						<div class="summary__buttons">
+							<button class="summary__button" type="submit">Apply Discount</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="registration">
+				<form action="#">
+					<div class="registration__container">
+						<div class="registration__title-block">
+							<div class="registration__main-title">Registered Customers</div>
+							<div class="registration__text">If you have an account, sign in with your email address.
+							</div>
+						</div>
+						<div class="registration__form">
+							<label class="registration__label" for="login">Email</label>
+							<input class="registration__input" placeholder="Your Name" required type="email"
+								name="login" id="login">
+							<label class="registration__label" for="password">Password</label>
+							<input class="registration__input" placeholder="Your Password" required type="password"
+								name="password" id="password">
+						</div>
+						<div class="registration__buttons button">
+							<button class="button__sign-in" type="submit">Sign
+								In</button>
+							<button class="button__forgot" type="reset">Forgot Your Password?</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+
+	</div>
+</body>
+
+</html>
